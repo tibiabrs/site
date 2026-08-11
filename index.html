@@ -34,16 +34,23 @@
             text-align: center;
         }
 
-        /* Container da Logo com a sua imagem */
+        /* Container da Logo ajustado */
         .logo-container {
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
 
+        /* Logo ampliada com destaque medieval */
         .logo-img {
             max-width: 100%;
             height: auto;
-            max-height: 180px; /* Ajuste a altura máxima da logo se necessário */
-            filter: drop-shadow(0 0 15px rgba(230, 180, 80, 0.3));
+            max-height: 320px; /* Aumentado para dar o devido destaque */
+            border-radius: 12px;
+            box-shadow: 0 0 25px rgba(230, 180, 80, 0.25), 0 10px 30px rgba(0, 0, 0, 0.8);
+            transition: transform 0.3s ease;
+        }
+
+        .logo-img:hover {
+            transform: scale(1.02); /* Efeito dinâmico ao passar o mouse */
         }
 
         .subtitle {
@@ -104,7 +111,7 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Botão no estilo menu do Tibia */
+        /* Botão estilo menu clássico */
         .button {
             display: inline-block;
             margin-top: 30px;
