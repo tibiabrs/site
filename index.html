@@ -204,7 +204,7 @@
             font-family: 'MedievalSharp', cursive;
         }
 
-        /* Container de Botoes */
+        /* Container de Botões */
         .button-group {
             display: flex;
             justify-content: center;
@@ -215,8 +215,11 @@
 
         /* Botão estilo menu clássico */
         .button {
-            display: inline-block;
-            padding: 14px 24px;
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 12px 24px;
             background: linear-gradient(180deg, #61492b 0%, #3a2a17 100%);
             color: #f1e0c5;
             text-decoration: none;
@@ -228,6 +231,15 @@
             box-shadow: 0 4px 10px rgba(0,0,0,0.6), inset 0 1px 0 rgba(255,255,255,0.2);
             transition: all 0.2s ease;
             text-shadow: 1px 1px 2px #000;
+            min-width: 200px;
+        }
+
+        .button span.subtext {
+            font-size: 11px;
+            color: #d1c7b7;
+            font-weight: normal;
+            margin-top: 3px;
+            opacity: 0.8;
         }
 
         .button:hover {
@@ -345,11 +357,13 @@
             </table>
 
             <div class="button-group">
-                <a class="button" href="https://discord.com/" target="_blank">
+                <a class="button" href="#">
                     💬 Discord
+                    <span class="subtext">(em breve)</span>
                 </a>
-                <a class="button button-whatsapp" href="https://wa.me/5565999164899" target="_blank">
-                    📱 WhatsApp
+                <a class="button button-whatsapp" href="#">
+                    📱 Grupo do Whatsapp
+                    <span class="subtext">(em breve)</span>
                 </a>
             </div>
 
